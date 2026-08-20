@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+}
+
+h1
+{
+    text-align:center; 
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+}
+
+button:hover {
+    background-color: lime;
+    color: white;
+}
+
+button:active {
+transform: scale(1.98);
+}
+
+
+
+.fixed {
+    position: fixed;
+}
+
+.relative {
+    position: relative;
+    bottom: 10px;
+}
+
+.banner {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+body {
+    margin-top: 7rem;
+}
+
+p {
+    position: relative;
+    left: 1rem;
+}
+
+#shifted{
+position: relative;         /*try changing to absolute*/
+background: var(--color);
+z-index: 1;
+top: 0;
+}
+
+ol{
+    background: var(--color);
+    position: relative;
+    top: 0;
+}
+
+img
+{
+    width: 100%;
+    margin: 5px;
+    padding: 2px;
+}
+
+@media (min-width: 768px){
+    .positionPics{
+        display:block;
+    };
+}
+
+
+.box{
+    background-color: orange;
+    border: 5px dashed lime;
+    border-bottom: 10px dotted purple;
+}
+
+.positionPics{
+    display: block;   /*flex;*/
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+:root {
+    --color: #3498db;
+}
+
+.grid_container{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: repeat(5, 1.5rem);
+}
+
+.itemcomment{
+    grid-column: 2/2;
+    grid-row: 4/5;
+}

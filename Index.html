@@ -4,13 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daves Recipes</title>
+    <link rel="stylesheet" href="Styles/Styles.css"/>
 </head>
 <body>
-  <h1>Davescooking</h1>  
-  <h2>Sour Dough Bread</h2>
-  <p><mark>Sour Dough Bread</mark> is <em>cheap to make</em>, make as much or as little as you like. Take the <strong>mess and hard work</strong> out of it by using a breadmaker for the mixing and kneading.</p>
+  <h1 class="banner">Davescooking</h1>  
+    <h2>Sour Dough Bread</h2>
+  <div class="positionPics">
+    <div>
+      <img src="Images/Bread.png" alt="bread" >
+    </div>
+    <!--<div>
+      <img src="Images/Bread.png" alt="bread">
+    </div>-->
+  </div> 
 
-  <a href="#contact">contact info</a>
+  <div class="grid_container">
+    <div>
+   <table>
+    <thead><tr><th>Product</th><th>Price</th></tr></thead>
+    <tbody>
+      <tr><td>Flour</td><td>£1.00</td></tr>
+      <tr><td>Milk Powder</td><td>£1.90</td></tr>
+      <tr><td>Vegetable Oil</td><td>£1.00</td></tr>
+    </tbody>
+  <tfoot><tr><th>Total</th><th>£3.90</th></tr></tfoot></table>
+    </div>
+    <div class="itemcomment">    
+      <p>makes 10 small loaves 39p each with milk powder and oil left over</p>
+    </div>
+  </div>
+  <p><mark>Sour Dough Bread</mark> is <em>cheap to make</em>, make as much or as little as you like. Take the <strong>mess and hard work</strong> out of it by using a breadmaker for the mixing and kneading.</p>
+<audio controls><source src="Audio/monume-food-food-cooking-music-547931.mp3" type="audio/mp3">Your browser does not support the audio element</audio>
+<br>
+<a href="Video/youtube_video.html">youtube_video_sourdough_bread</a>
+<br>
+<a href="#contact">contact email</a>
+<br>
+<a href="Pages/contact_form.html">contact form</a>
   <br>
   <a href="https://davewhit4.github.io/davewhite/davewhitecv.html" target="_blank">link to website</a>
   <br>
@@ -26,7 +56,7 @@
     <li>Add Flour and half the weight of tepid water</li>
     <li>Mix together into dough</li>
     <li>Put into plastic container</li>
-    <li>Cover with lid but allow air to get in</li>
+    <li id="shifted" >Cover with lid but allow air to get in</li>
     <li>Leave over night (it turns into sour dough)</li>
     <li>Add twice the amount of flour and water than the first batch</li>
     <li>Add tablespoon of milk powder (or milk)</li>
@@ -36,5 +66,8 @@
 </ol>
 <h3 id="contact">Contact Us</h3>
 <p><em>email: davewhit444@gmail.com</em></p>
+<button>
+  Press
+</button>
 </body>
 </html>
